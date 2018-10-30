@@ -1,0 +1,5 @@
+abf_access-0.1
+
+  24 Nov 2005 George Shapovalov <George.Shapovalov@pharm.unige.ch>
+  First source archive. Basic stuff in, compiles and works..
+  Starting on logical refactoring - reorg of packages

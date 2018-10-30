@@ -1,0 +1,19 @@
+This is a library for accessing electrophysiology data stored in
+Axon's abf files. Both integer and floating abf formats are supported
+At this point library should handle Gap Free and Episodic Stimulation modes for reading
+reasonably well, although large files may cause some grief, as all data is read completely
+into the memory. So, if you hit performance degradation with couple hundred MB large files
+try adding more memory or swap space or try bugging me to add support for partial reads..
+
+Similarly, writing is not supported yet, although is planned to be worked on soon..
+
+The building of the project is done by the means of a quite basic Makefile. I will most
+likely shift to gnat project files however, with even simplier Makefile to wrap up most
+common targets..
+At this point you can build the library by simply running make. Short overview of targets:
+
+make  or  make all  -  will build lib with debugging turned on and without optimizations
+use
+make final  to build optimized version
+and
+make clean  to remove all generated .o and .ali files..
