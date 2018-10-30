@@ -114,7 +114,8 @@ procedure test_abf_io is
 
 begin
     processCommandLine (params);
-    Put_Line("commencing tests");
+    ABF.Debug := params.Debug;
+    Put("commencing tests");DebugPrint(params.Debug, " (debug on)", eol=>False);New_Line;
     Put("reading header .. ");
     abfH := ABF.Header.Read_Header(To_String(params.inName));
     Put_Line("done.");

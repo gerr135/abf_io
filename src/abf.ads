@@ -20,7 +20,9 @@ package ABF is
 --pragma Pure (ABF);
 
 	--  Some exceptions and notifications
-	Not_Implemented : exception;
+    Not_Implemented : exception;
+
+    Debug : Boolean;
 
 
 	-------------------------------------
