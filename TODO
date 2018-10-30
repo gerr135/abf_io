@@ -1,6 +1,2 @@
-1. finish converting empty_gapfree_header..  -- done
-2. convert ABFHeader definition to assing null defaults
-3. ABF.Data module
-3.1 ABF.Data.DataRec - add Initialization...  -- done
-4. dt in print procedures: "demultiplex"!!!  -- done, at conversion (GetModeDescriptors)
-
+ABF2.0 is not supported.
+Writing ABF files needs testing.

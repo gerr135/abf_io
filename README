@@ -1,19 +1,18 @@
-This is a library for accessing electrophysiology data stored in
-Axon's abf files. Both integer and floating abf formats are supported
-At this point library should handle Gap Free and Episodic Stimulation modes for reading
-reasonably well, although large files may cause some grief, as all data is read completely
-into the memory. So, if you hit performance degradation with couple hundred MB large files
-try adding more memory or swap space or try bugging me to add support for partial reads..
+This is a library for accessing electrophysiology data stored in Axon's abf files.
+Both integer and floating abf formats are supported. At this point library should handle
+Gap Free and Episodic Stimulation modes for reading reasonably well, although large files
+may cause some grief, as all data is read completely into the memory. So, if you hit
+performance degradation with couple hundred MB large files try adding more memory or
+swap space or try bugging me to add support for partial reads..
 
-Similarly, writing is not supported yet, although is planned to be worked on soon..
+Writing is not supported yet. I may add it at some time in the future.
 
-The building of the project is done by the means of a quite basic Makefile. I will most
-likely shift to gnat project files however, with even simplier Makefile to wrap up most
-common targets..
-At this point you can build the library by simply running make. Short overview of targets:
+To build this, simply run make.
+make clean is also provided.
 
-make  or  make all  -  will build lib with debugging turned on and without optimizations
-use
-make final  to build optimized version
-and
-make clean  to remove all generated .o and .ali files..
+NOTE: this is a rather old code, done circa 2000 for my PhD to be used by some tools to
+process large abf files. On this initial import I simply cleaned it up a bit. Not yet tested extensively.
+Also, this only supports ABF1.8 format as of now - 2.0 came out quite a bit later and I haven't
+yet had a reason to port it. I also had some refactoring uder way, to clean up the code.
+This is not yet integrated. I'll add this at some point, then I may look at reading ABF2.0
+and writing ABF files.
