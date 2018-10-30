@@ -1,4 +1,4 @@
-TARGET = run_abf_io
+TARGET = test_abf_io
 SOURCES = src/*.ad?
 
 # rule to link the program

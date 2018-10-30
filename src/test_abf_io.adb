@@ -19,7 +19,7 @@ with C; use C;
 with util; use util;
 
 
-procedure run_abf_io is
+procedure test_abf_io is
     procedure printUsage is
         use Ada.Text_IO;
     begin
@@ -144,4 +144,4 @@ begin
     end if;
 exception
 	when Finish => null;
-end run_abf_io;
+end test_abf_io;
